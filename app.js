@@ -1,10 +1,5 @@
 "use strict";
-
-const msg = "Hola mundo";
-const hero = {
-  name: "Ironman",
-  age: 45,
-};
-
-console.log(hero);
+Object.defineProperty(exports, "__esModule", { value: true });
+const a = 10;
+let b;
 //# sourceMappingURL=app.js.map
