@@ -1,7 +1,8 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+
 (() => {
-    let isSuperman = true;
-    console.log(isSuperman);
+  let isSuperman = true;
+  let isbatman = false;
+  console.log(isbatman);
 })();
 //# sourceMappingURL=booleans.js.map
