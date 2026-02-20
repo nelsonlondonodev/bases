@@ -1,0 +1,21 @@
+Any:
+Usar la "any" lod menos posible que se deba usar.
+No abusar de "any".
+Siempre trata de poner un tipado estricto, para eso se creo TypeScript.
+
+El profesor utiliza mucho una función que se llama, anomima autoinvocada:
+
+(() => {
+
+})()
+
+Arrays:
+Cuando veamos [], esto significa que no solamente es un array, tambien puede significar que es una dupla, un trio, un cuarteto.
+En typeScript podemos insertar de que tipo o que tipos pueden ser la constante. 
+Ej.
+
+const numbers: (string | number | boolean )[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; 
+
+Es muy raro de utlizarse, sin embargo, se puede.
+
+
