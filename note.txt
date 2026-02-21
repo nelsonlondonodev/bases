@@ -10,12 +10,35 @@ El profesor utiliza mucho una función que se llama, anomima autoinvocada:
 })()
 
 Arrays:
-Cuando veamos [], esto significa que no solamente es un array, tambien puede significar que es una dupla, un trio, un cuarteto.
+Cuando veamos [], esto significa que no solamente es un array, tambien puede significar que es una tupla, un trio, un cuarteto.
 En typeScript podemos insertar de que tipo o que tipos pueden ser la constante. 
 Ej.
 
 const numbers: (string | number | boolean )[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; 
 
 Es muy raro de utlizarse, sin embargo, se puede.
+
+
+Un dato de importante, dentro de las '[]', pueden exitir tanto los arrays como las tupla, los trios, etc...
+Esto que siginifica que si encuentras datos como:
+const hero: [string, number, boolean] = ['Dr Strange', 100, true];
+Esta es la sintaxis de una tupla, trios, etc...
+
+El tipo de dato "enum", tiene una sintaxis especial, este es un ejemplo:
+
+(() => {
+  enum AudioLevel {
+    min,
+    medium,
+    max,
+  }
+
+  let currentAudio = AudioLevel.max;
+
+  console.log(currentAudio);
+})();
+
+
+Es una sintaxis muy simple que en el caso de JavaScript, es mun trozo de código mucho más comlejo, para llegar al mismo resultado.
 
 
