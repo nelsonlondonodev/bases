@@ -41,4 +41,18 @@ El tipo de dato "enum", tiene una sintaxis especial, este es un ejemplo:
 
 Es una sintaxis muy simple que en el caso de JavaScript, es mun trozo de código mucho más comlejo, para llegar al mismo resultado.
 
+El tipo de dato never, usualmente es una funcional que va a terminar con un error.
+EJ.
 
+(() => {
+  const error = (message: string): never | number => {
+    if (false) {
+      throw new Error("message");
+    }
+
+    return 1;
+  };
+
+  error("Auxilio");
+  console.log("Hola mundo");
+})();
