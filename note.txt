@@ -56,3 +56,19 @@ EJ.
   error("Auxilio");
   console.log("Hola mundo");
 })();
+
+26/02/2026
+
+Funciones:
+
+args-optional:
+Se puede hacer uso del simbolo de interrogación '?', este le dice a TipeScript, "puede que venga o puede que no".
+
+(() => {
+  const fullName = (firstName: string, lastName?: string): string => {
+    return `${firstName} ${lastName || "no lastname"}`;
+  };
+
+  const name = fullName("Tony");
+  console.log({ name });
+})();
