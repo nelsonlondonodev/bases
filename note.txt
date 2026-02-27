@@ -72,3 +72,7 @@ Se puede hacer uso del simbolo de interrogación '?', este le dice a TipeScript,
   const name = fullName("Tony");
   console.log({ name });
 })();
+
+La regla de oro de TypeScript es: 
+"Si de puede hacer JavaScript, se puede hacer TypeAcript".
+
