@@ -76,3 +76,9 @@ Se puede hacer uso del simbolo de interrogación '?', este le dice a TipeScript,
 La regla de oro de TypeScript es: 
 "Si de puede hacer JavaScript, se puede hacer TypeAcript".
 
+Si dejamosa una variable de tipo let, si decirle a TypeScript que tipo de dato es, el por defecto lo denomina de tipo "any".
+Ej.
+
+(() => {
+  let myFunction;
+})
