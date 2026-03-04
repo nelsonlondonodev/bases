@@ -82,3 +82,8 @@ Ej.
 (() => {
   let myFunction;
 })
+
+Tipos personalizados.
+
+Type, es una palabra reservada para typeScript, y no se ve en javaScript, esta es una forma de hace globales los tipos, y no tener que estar cambiando todo el código manuamente.
+Esto es una forma de hacer más facil y escalable el código.
