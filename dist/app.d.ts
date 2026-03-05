@@ -1,8 +1,27 @@
-declare function sumar(a: number, b: number): number;
-declare const contar: (heroes: string[]) => number;
-declare const superHeroes: string[];
-declare const llamarBatman: (llamar?: boolean) => void;
-declare const unirheroes: (...personas: string[]) => string;
-declare const noHaceNada: (numero: number, texto: string, booleano: boolean, arreglo: string[]) => void;
-declare let noHaceNadaTampoco: (n: number, s: string, b: boolean, a: string[]) => void;
+type car = {
+    carroceria: string;
+    modelo: string;
+    antibalas: boolean;
+    pasajeros: number;
+    disparar?: () => void;
+};
+declare const batimovil: car;
+declare const bumblebee: car;
+type villanos = {
+    nombre: string;
+    edad: number | undefined;
+    mutante: boolean;
+};
+declare const villanos: villanos[];
+type Charles = {
+    poder: string;
+    estatura: number;
+};
+declare const charles: Charles;
+type Apocalipsis = {
+    lider: boolean;
+    miembros: string[];
+};
+declare const apocalipsis: Apocalipsis;
+declare let mystique: Charles | Apocalipsis;
 //# sourceMappingURL=app.d.ts.map
