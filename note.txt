@@ -92,3 +92,5 @@ Configuración del tsconfig.json
 
 Cunaod esta activo el ""sourceMap": true,", en  tsconfig.json, se crea un tercer archivo con la extensión .map.
 
+Var:
+No utlizar más 'var", para typeScritp no existe, y según el profe, var trae o traia muchos problemas extraños.
