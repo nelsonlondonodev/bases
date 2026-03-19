@@ -1,27 +1,34 @@
-type car = {
-    carroceria: string;
-    modelo: string;
-    antibalas: boolean;
-    pasajeros: number;
-    disparar?: () => void;
-};
-declare const batimovil: car;
-declare const bumblebee: car;
-type villanos = {
+interface Auto {
+    encender: boolean;
+    velocidadMaxima: number;
+    acelerar(): void;
+}
+declare const conducirBatimovil: (auto: Auto) => void;
+declare const batimovil: Auto;
+interface Guason {
+    reir?: boolean;
+    comer?: boolean;
+    llorar?: boolean;
+}
+declare const guason: Guason;
+declare const reir: (guason: Guason) => void;
+interface CiudadGotica {
+    (ciudadanos: string[]): number;
+}
+declare const ciudadGotica: CiudadGotica;
+interface PersonaInterface {
     nombre: string;
-    edad: number | undefined;
-    mutante: boolean;
-};
-declare const villanos: villanos[];
-type Charles = {
-    poder: string;
-    estatura: number;
-};
-declare const charles: Charles;
-type Apocalipsis = {
-    lider: boolean;
-    miembros: string[];
-};
-declare const apocalipsis: Apocalipsis;
-declare let mystique: Charles | Apocalipsis;
+    edad: number;
+    sexo: string;
+    estadoCivil: string;
+    imprimirBio(): void;
+}
+declare class Persona implements PersonaInterface {
+    nombre: string;
+    edad: number;
+    sexo: string;
+    estadoCivil: string;
+    constructor(nombre: string, edad: number, sexo: string, estadoCivil: string);
+    imprimirBio(): void;
+}
 //# sourceMappingURL=app.d.ts.map

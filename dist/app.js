@@ -1,48 +1,49 @@
 "use strict";
-// Objetos
+// Crear interfaces
+const conducirBatimovil = (auto) => {
+    auto.encender = true;
+    auto.velocidadMaxima = 100;
+    auto.acelerar();
+};
 const batimovil = {
-    carroceria: "Negra",
-    modelo: "6x6",
-    antibalas: true,
-    pasajeros: 4,
-};
-const bumblebee = {
-    carroceria: "Amarillo con negro",
-    modelo: "4x2",
-    antibalas: true,
-    pasajeros: 4,
-    disparar() {
-        // El metodo disparar es opcional
-        console.log("Disparando");
+    encender: false,
+    velocidadMaxima: 0,
+    acelerar() {
+        console.log("...... gogogo!!!");
     },
 };
-const villanos = [
-    {
-        nombre: "Lex Luthor",
-        edad: 54,
-        mutante: false,
-    },
-    {
-        nombre: "Erik Magnus Lehnsherr",
-        edad: 49,
-        mutante: true,
-    },
-    {
-        nombre: "James Logan",
-        edad: undefined,
-        mutante: true,
-    },
-];
-const charles = {
-    poder: "psiquico",
-    estatura: 1.78,
+const guason = {
+    reir: true,
+    comer: true,
+    llorar: false,
 };
-const apocalipsis = {
-    lider: true,
-    miembros: ["Magneto", "Tormenta", "Psylocke", "Angel"],
+const reir = (guason) => {
+    if (guason.reir) {
+        console.log("JAJAJAJA");
+    }
 };
-// Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
-let mystique;
-mystique = charles;
-mystique = apocalipsis;
+const ciudadGotica = (ciudadanos) => {
+    return ciudadanos.length;
+};
+/*
+  propiedades:
+    - nombre
+    - edad
+    - sexo
+    - estadoCivil
+    - imprimirBio(): void // en consola una breve descripcion.
+*/
+class Persona {
+    nombre;
+    edad;
+    sexo;
+    estadoCivil;
+    constructor(nombre, edad, sexo, estadoCivil) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.sexo = sexo;
+        this.estadoCivil = estadoCivil;
+    }
+    imprimirBio() { }
+}
 //# sourceMappingURL=app.js.map
