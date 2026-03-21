@@ -1,5 +1,5 @@
 (() => {
-  class Aposcalipsis {
+  class Apocalipsis {
     static instance: Apocalipsis;
   }
 

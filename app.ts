@@ -77,7 +77,7 @@ class Persona implements PersonaInterface {
   public sexo: string;
   public estadoCivil: string;
 
-  constructor(nombre: string, edad: number, sexo: string; estadoCivil: string) {
+  constructor(nombre: string, edad: number, sexo: string, estadoCivil: string) {
     this.nombre = nombre;
     this.edad = edad;
     this.sexo = sexo;

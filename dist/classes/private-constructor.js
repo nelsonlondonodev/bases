@@ -1,6 +1,6 @@
 "use strict";
 (() => {
-    class Aposcalipsis {
+    class Apocalipsis {
         static instance;
     }
     //const apocalipsis = new Aposcalipsis("Soy Apocalipsis... el único");
